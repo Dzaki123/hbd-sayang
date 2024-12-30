@@ -1,0 +1,112 @@
+body {
+    margin-bottom: 50px;
+    background-color: #B1F0F7;
+    position: relative;
+    padding-bottom: 10px;
+    background-image: url('../source/bg water.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.jumbotron{
+    background-size: cover;
+}
+
+#pp {
+    width: 25%;
+}
+
+/* Gaya untuk heading Memories */
+/* Heading "Memories" */
+.meet-her h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Kontainer semua video */
+  /* Gaya untuk kontainer video */
+.videos-container {
+    display: flex; /* Flexbox untuk berjajar horizontal */
+    flex-wrap: nowrap; /* Hindari pembungkusan video */
+    gap: 20px; /* Jarak antar video */
+    justify-content: center; /* Pusatkan video di dalam kontainer */
+    align-items: flex-start; /* Pastikan semua video sejajar di bagian atas */
+  }
+  
+  /* Gaya untuk setiap item video */
+  .video-item {
+    text-align: center; /* Judul video di tengah */
+    width: 280px; /* Lebar tetap untuk konsistensi */
+    flex-shrink: 0; /* Jangan biarkan elemen mengecil */
+  }
+  
+  /* Gaya untuk judul video */
+  .video-item h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Frame video */
+  .iframe-container {
+    position: relative;
+    width: 280px;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gaya untuk iframe di dalam frame */
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+    
+.card {
+    padding: 12px;
+}
+
+.vote {
+    margin-top: 12px;
+}
+
+.result {
+    opacity: 0;
+    transition: 1s;
+}
+.gift-img {
+  width: 220px; /* Lebar gambar */
+
+}
+
+/* Efek bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Tambahkan kelas untuk animasi */
+.bounce {
+  animation: bounce 0.5s ease-in-out; /* Durasi animasi */
+}
+
+
+.muncul {
+    opacity: 1;
+}
+footer{
+    position: absolute;
+    bottom: -55px;
+    width: 100%;
+    height: 57px;
+}
